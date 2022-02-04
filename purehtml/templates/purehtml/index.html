@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+
+<head>
+    <title>Lab 2 - Main Page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'purehtml/css/style.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body class="full super-center-grid">
+    <div class="super-center-grid main-layout default-shadow">
+        <h1>HelloWorld</h1>
+        <h4>Hi, I'm Marie Curie!</h4>
+        <a href="{% url 'purehtml:interval' %}">Javascript setInterval</a>
+        <a href="{% url 'purehtml:button' %}">Javascript button</a>
+        <a href="{% url 'purehtml:name' %}">Name Page</a>
+    </div>
+
+</body>
